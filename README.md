@@ -122,7 +122,6 @@ INSERT INTO TodoPercent (Percent) VALUES
 ### Chendiagram
 ![](Datenbank/Chen.drawio.png)
 
-Das ist ebenfalls ein ER-Diagramm, aber in der Chen-Notation.
 Hier gilt:
 
 Entities = Rechtecke (z. B. TodoTodolist)
@@ -152,7 +151,6 @@ Das Chen-Modell ist oft theoretischer und gut für Datenmodell-Erklärungen im U
 ### Crowsfoot
 ![](Datenbank/crowsfoot.drawio.png)
 
-Das ist ein Entity-Relationship-Diagramm in der sogenannten Crow’s Foot Notation (Krähenfuss-Notation).
 Es zeigt:
 
 Tabellen (Entities) als Rechtecke
