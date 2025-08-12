@@ -122,8 +122,62 @@ INSERT INTO TodoPercent (Percent) VALUES
 ### Chendiagram
 ![](Datenbank/Chen.drawio.png)
 
+Das ist ebenfalls ein ER-Diagramm, aber in der Chen-Notation.
+Hier gilt:
+
+Entities = Rechtecke (z. B. TodoTodolist)
+
+Relationships = Rauten (z. B. „hat“, „kann“)
+
+Attribute (nicht im Bild einzeln dargestellt) hängen normalerweise als Ellipsen an Entities oder Relationships
+
+Die Kardinalitäten (1, n, m) stehen an den Beziehungslinien.
+
+In deiner Datenbank:
+
+Du siehst z. B.:
+
+TodoTodolist „hat“ ein TodoEnddate
+
+TodoTodolist „kann“ ein TodoRememberme haben
+
+TodoState „ist Teil von“ TodoStateHistory
+
+TodoPercent „hat“ TodoState
+
+Das Chen-Modell ist oft theoretischer und gut für Datenmodell-Erklärungen im Unterricht oder für Dokumentationen.
+
+
+
 ### Crowsfoot
 ![](Datenbank/crowsfoot.drawio.png)
+
+Das ist ein Entity-Relationship-Diagramm in der sogenannten Crow’s Foot Notation (Krähenfuss-Notation).
+Es zeigt:
+
+Tabellen (Entities) als Rechtecke
+
+Beziehungen (Relationships) als Linien zwischen den Tabellen
+
+Kardinalitäten (1:1, 1:n, m:n) über die Krähenfüsse und Striche an den Linienenden
+
+In deiner Datenbank:
+
+TodoTodolist ist die zentrale Tabelle (enthält die ToDos).
+
+Sie ist per Foreign Keys verbunden mit:
+
+TodoState (Status des ToDos)
+
+TodoEnddate (Enddatum)
+
+TodoRememberme (Erinnerungsdatum)
+
+TodoState hängt an TodoPercent (Prozent-Fortschritt)
+
+Historientabellen (TodoStateHistory, TodoRememberHistory) referenzieren Änderungen an den ToDos oder Erinnerungen.
+
+Das Crowsfoot-Diagramm wird meist verwendet, wenn man Datenbankdesigns mit Tabellen und Kardinalitäten zeigen möchte.
 
 ### Datadiagram
 | Table               | Column           | DataType     | Nullable   | Default             | Extra          | Key   | References                                     |
@@ -152,3 +206,11 @@ INSERT INTO TodoPercent (Percent) VALUES
 | TodoTodolist        | EnddateID        | int(11)      | NO         | nan                 | nan            | FK    | TodoEnddate.EnddateID (DEL -, UPD CASCADE)     |
 | TodoTodolist        | StateID          | int(11)      | NO         | nan                 | nan            | FK    | TodoState.StateID (DEL -, UPD CASCADE)         |
 | TodoTodolist        | TodoID           | int(11)      | NO         | nan                 | AUTO_INCREMENT | PK    | nan                                            |
+
+## Fazit
+Die Grafiken sowie das Design der Datenbanken wurde selber erstellt
+Das meisste des Codes sowie das meiste der Texten in diesem Readme sind von ChatGPT erstellt.
+Aufgrund von wenig Zeit für diese Arbeit
+
+
+
