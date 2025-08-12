@@ -119,10 +119,13 @@ INSERT INTO TodoPercent (Percent) VALUES
 
 
 ## Die Datenbank
+### Chendiagram
 ![](Datenbank/Chen.drawio.png)
 
+### Crowsfoot
 ![](Datenbank/crowsfoot.drawio.png)
 
+### Datadiagram
 | Table               | Column           | DataType     | Nullable   | Default             | Extra          | Key   | References                                     |
 |:--------------------|:-----------------|:-------------|:-----------|:--------------------|:---------------|:------|:-----------------------------------------------|
 | TodoEnddate         | Enddate          | date         | NO         | nan                 | nan            | nan   | nan                                            |
