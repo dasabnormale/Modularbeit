@@ -208,7 +208,7 @@ Das Crowsfoot-Diagramm wird meist verwendet, wenn man Datenbankdesigns mit Tabel
 ## Fazit
 Die Grafiken sowie das Design der Datenbanken wurde selber erstellt
 Das meisste des Codes sowie das meiste der Texten in diesem Readme sind von ChatGPT erstellt.
-Aufgrund von wenig Zeit für diese Arbeit
+Aufgrund von wenig Zeit (3-4 Schulwochen) für diese Arbeit
 
 
 
