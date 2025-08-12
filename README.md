@@ -119,9 +119,9 @@ INSERT INTO TodoPercent (Percent) VALUES
 
 
 ## Die Datenbank
-![](Datenbank/chen.drawio.png)
+![](Datenbank/Chen.drawio.png)
 
-![](Datenbank/Crowsfoot.drawio.png)
+![](Datenbank/crowsfoot.drawio.png)
 
 | Table               | Column           | DataType     | Nullable   | Default             | Extra          | Key   | References                                     |
 |:--------------------|:-----------------|:-------------|:-----------|:--------------------|:---------------|:------|:-----------------------------------------------|
